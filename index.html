@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="logo">
+          <div class="logo-icon">☁</div>
+          <div>
+            <h1>Weather</h1>
+            <p>Weather dashboard</p>
+          </div>
+        </div>
+        <form class="search-box" id="searchForm">
+          <div class="search-input-wrapper">
+            <input
+              type="text"
+              id="cityInput"
+              placeholder="Search city..."
+              autocomplete="off"
+            />
+            <button type="submit" id="searchBtn">Search</button>
+          </div>
+          <p id="errorMessage"></p>
+        </form>
+      </header>
+      <main>
+        <section class="current-weather">
+          <div class="location">
+            <div>
+              <p class="country" id="country">Uzbekistan</p>
+              <h2 id="city">Tashkent</h2>
+            </div>
+
+            <span class="location-icon">📍</span>
+          </div>
+          <div class="main-weather">
+            <div class="weather-icon" id="weatherIcon">☀️</div>
+
+            <div class="temperature">
+              <span id="temperature">24</span>
+              <sup>°C</sup>
+            </div>
+
+            <p class="weather-description" id="description">Sunny</p>
+
+            <p class="fells-like">
+              Fells like <span id="feelsLike"> 25</span>°C
+            </p>
+          </div>
+        </section>
+
+        <section class="weather-details">
+          <div class="detail-card">
+            <div class="detail-icon">💧</div>
+
+            <div>
+              <p>Humidity</p>
+              <strong id="humidity">65%</strong>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">💨</div>
+
+            <div>
+              <p>Wind</p>
+              <strong id="wind">12 km/h</strong>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">👁️</div>
+
+            <div>
+              <p>Visibility</p>
+              <strong id="visibility">10 km</strong>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">🌡️</div>
+
+            <div>
+              <p>Pressure</p>
+              <strong id="pressure">1015 hPa</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="forecast-section">
+          <div class="section-header">
+            <h2>5-day Forecast</h2>
+            <p>Upcoming weather</p>
+          </div>
+
+          <div class="forecast-grid" id="forecastGrid">
+            <div class="forecast-card">
+              <p class="forecast-day">MON</p>
+              <div class="forecast-icon">☀️</div>
+              <strong>25°C</strong>
+              <span>18°C</span>
+            </div>
+
+            <div class="forecast-card">
+              <p class="forecast-day">TUE</p>
+              <div class="forecast-icon">🌤️</div>
+              <strong>23°C</strong>
+              <span>17°C</span>
+            </div>
+
+            <div class="forecast-card">
+              <p>WED</p>
+              <div class="forecast-icon">🌧️</div>
+              <strong>19°C</strong>
+              <span>15°C</span>
+            </div>
+
+            <div class="forecast-card">
+              <p class="forecast-day">THU</p>
+              <div class="forecast-icon">☁️</div>
+              <strong>21°C</strong>
+              <span>16°C</span>
+            </div>
+
+            <div class="forecast-card">
+              <p class="forecast-day">FRI</p>
+              <div class="forecast-icon">☀️</div>
+              <strong>26°C</strong>
+              <span>19°C</span>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Weather App • Built with JavaScript By Nurbek Mirzayev</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
